@@ -4,7 +4,7 @@ export default function Testimonials() {
   const { heading, subheading, entries } = siteConfig.testimonials;
 
   return (
-    <section className={`${siteConfig.styles.bgLight} py-24 px-6 md:px-12 border-t ${siteConfig.styles.borderLight}`}>
+    <section className={`py-24 px-6 md:px-12 border-t ${siteConfig.styles.borderLight}`}>
       <div className="max-w-6xl mx-auto text-center">
         <h2 className={`text-3xl md:text-4xl font-bold mb-4 tracking-tight ${siteConfig.styles.textPrimary}`}>
           {heading}
@@ -14,8 +14,8 @@ export default function Testimonials() {
         </p>
         <div className="grid md:grid-cols-3 gap-10 text-left">
           {entries.map(({ quote, name, title }, i) => (
-            <div key={i} className="p-6 bg-white rounded-lg border shadow-sm">
-              <p className={`${siteConfig.styles.textSubtle} italic mb-4`}>“{quote}”</p>
+            <div key={i} className="p-6 rounded-lg border shadow-sm">
+              <p className={`${siteConfig.styles.textSubtle} italic mb-4`}>&ldquo;{quote}&rdquo;</p>
               <div className="text-sm font-medium text-gray-900">{name}</div>
               <div className="text-xs text-gray-500">{title}</div>
             </div>
