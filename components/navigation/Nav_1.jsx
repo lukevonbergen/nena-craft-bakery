@@ -1,13 +1,14 @@
 'use client';
 import { useState } from 'react';
 import { siteConfig } from '@/config/siteConfig';
+import { X, Menu } from 'lucide-react'; // Adds icon-based toggle
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const nav = siteConfig.nav;
 
   return (
-    <header className="w-full sticky top-0 z-50 backdrop-blur-md bg-white/80">
+    <header className="w-full sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <a href="/" className={`text-base font-semibold ${siteConfig.styles.textPrimary}`}>
@@ -30,24 +31,40 @@ export default function Navbar() {
           </a>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800 text-2xl focus:outline-none" aria-label="Toggle menu">
-            ☰
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-gray-800 text-2xl focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-sm shadow-md mt-1 mx-4 px-6 py-4 space-y-4 text-sm font-semibold text-gray-700 transition-all rounded-b-xl">
-          {nav.links.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="block hover:text-amber-600"
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="md:hidden bg-white/90 backdrop-blur-sm border-t border-gray-200 px-6 py-4 text-sm font-semibold text-gray-700 transition-all">
+          <ul className="space-y-0 divide-y divide-gray-200">
+            {nav.links.map(link => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block py-3 hover:text-amber-600"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <li className="pt-3">
+              <a
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="block text-white bg-slate-600 px-4 py-2 rounded-md text-center hover:bg-slate-700 transition"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </header>
