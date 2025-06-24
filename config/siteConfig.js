@@ -199,7 +199,7 @@ export const siteConfig = {
       phoneDisplay: '01225 542636',
       email: 'info@cascarabath.co.uk',
       image: {
-        src: '/gallery/cascara-interior.jpg',
+        src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/de/4c/a5/caption.jpg?w=1100&h=1100&s=1',
         alt: 'Cascara interior view',
       },
       hours: {
