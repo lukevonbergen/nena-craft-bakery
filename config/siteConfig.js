@@ -88,8 +88,8 @@ export const siteConfig = {
   },
 
   hero: {
-    image: '/images/cascara-hero.jpg',
-    imageAlt: 'Cascara storefront, Bath',
+    image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/bd/ea/alfred-street.jpg?w=1200&h=-1&s=1',
+    imageAlt: 'Cascara interior, Bath',
     heading: 'PLANT‑BASED EVERYDAY',
     highlightWord: 'COMMUNITY',
     blurb:
@@ -118,7 +118,7 @@ export const siteConfig = {
     address: ['Cascara Bath', '3 Upper Borough Walls, Bath BA1 1RG, UK'],
     openingHours: ['Mon–Fri: 08:00–16:00', 'Sat: 08:00–16:30', 'Sun: 10:00–16:00'],
     mapEmbedUrl:
-      'https://www.google.com/maps/embed?...3+Upper+Borough+Walls+Bath',
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.0978139917497!2d-2.3596054!3d51.3828803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718113b0422f9d%3A0x7c02a4b8c10badd8!2sCASCARA!5e0!3m2!1sen!2suk!4v1750798620094!5m2!1sen!2suk',
   },
 
   gallery: {
@@ -127,10 +127,10 @@ export const siteConfig = {
       blurb: 'Peek inside Cascara—cozy nooks, green vibes, vegan goodness & community moments.',
     },
     images: [
-      { src: '/gallery/cascara1.jpg', alt: 'Cascara interior with plants' },
-      { src: '/gallery/cascara2.jpg', alt: 'Vegan brunch plate' },
-      { src: '/gallery/cascara3.jpg', alt: 'Coffee and cakes' },
-      { src: '/gallery/cascara4.jpg', alt: 'Team behind the counter' },
+      { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f9/63/f3/photo0jpg.jpg?w=1400&h=-1&s=1', alt: 'Cascara interior with plants' },
+      { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/55/1b/d0/photo2jpg.jpg?w=1400&h=-1&s=1', alt: 'Vegan brunch plate' },
+      { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bc/46/fd/cheeze-marmite-toastie.jpg?w=1000&h=-1&s=1', alt: 'Coffee and cakes' },
+      { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/fa/9a/cb/caption.jpg?w=1400&h=-1&s=1', alt: 'Team behind the counter' },
     ],
   },
 
@@ -173,10 +173,10 @@ export const siteConfig = {
   menuHighlights: {
     title: 'What We’re Known For',
     items: [
-      { label: 'All‑Day Breakfast', image: '/gallery/cascara1.jpg' },
-      { label: 'Cold-Pressed Juices & Smoothies', image: '/gallery/cascara2.jpg' },
-      { label: 'Specialty Coffee', image: '/gallery/cascara3.jpg' },
-      { label: 'Home‑Baked Cakes', image: '/gallery/cascara4.jpg' },
+      { label: 'Stunning Wraps', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/f7/2c/b5/all-day-brunch-burrito.jpg?w=1100&h=-1&s=1' },
+      { label: 'Coffee & Cake', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e9/55/a6/img-20190322-173157-026.jpg?w=1000&h=-1&s=1' },
+      { label: 'Cosy Inside', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/bd/ea/alfred-street.jpg?w=1200&h=-1&s=1' },
+      { label: 'Smoothies', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR-9I9sIvIeKUJ9zh1WKn9eF11FQX5Be9cxw&s' },
     ],
     cta: { label: 'Browse Menu', href: '/menu' },
   },
@@ -187,7 +187,7 @@ export const siteConfig = {
       blurb:
         "Whether you'd like coffee, brunch, or a chat, we’re here—walk-ins always welcome.",
       backgroundImage: {
-        src: '/images/cascara-hero-2.jpg',
+        src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c2/31/c3/cascara-front.jpg?w=800&h=-1&s=1',
         alt: 'Inside Cascara cafe corner',
       },
     },
