@@ -40,8 +40,10 @@ export default function HeroSection() {
           <span className="ml-4">{hero.hours.weekdays.time}</span>
         </div>
         <div className="bg-black/80 text-white px-4 py-2 rounded-full shadow border border-white text-sm font-semibold">
-          {hero.hours.weekends.label}
-          <span className="ml-4">{hero.hours.weekends.time}</span>
+          {hero.hours.saturday.label}–{hero.hours.sunday.label}
+          <span className="ml-4">
+            {hero.hours.saturday.time} / {hero.hours.sunday.time}
+          </span>
         </div>
       </div>
 
