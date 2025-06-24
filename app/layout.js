@@ -1,6 +1,5 @@
 import './globals.css';
 import { Urbanist, Shrikhand } from 'next/font/google';
-import Script from 'next/script';
 import Nav from '@/components/navigation/Nav_1';
 import Footer from '@/components/footer/Footer_1';
 import Banner from '@/components/banner/Banner_1';
@@ -52,13 +51,6 @@ export default function RootLayout({ children }) {
         <div className="block md:hidden sticky top-0 z-50">
           <Nav />
         </div>
-
-        {/* Instagram Embed Script */}
-        <Script
-          src="https://www.instagram.com/embed.js"
-          strategy="lazyOnload"
-          async
-        />
 
         <main>{children}</main>
         <Footer />

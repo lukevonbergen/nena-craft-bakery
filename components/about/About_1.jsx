@@ -7,25 +7,6 @@ export default function AboutUs() {
   const { heading, subheading, features } = siteConfig.about;
   const { textPrimary, textSubtle, textMuted, bgLight } = siteConfig.styles;
 
-  const instagramPosts = [
-    'https://www.instagram.com/cascarabath/p/DLPnZQKsafK/',
-    'https://www.instagram.com/cascarabath/p/DKZpqgusYSD/',
-    'https://www.instagram.com/cascarabath/p/DHgBBwDtal4/',
-  ];
-
-  // Load the Instagram embed script
-  useEffect(() => {
-    const scriptExists = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
-    if (!scriptExists) {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    } else {
-      window.instgrm?.Embeds.process();
-    }
-  }, []);
-
   return (
     <section className={`py-24 px-6 md:px-12 ${bgLight}`}>
       <div className="max-w-4xl mx-auto text-center mb-16">
