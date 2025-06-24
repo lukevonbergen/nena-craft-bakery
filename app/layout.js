@@ -1,33 +1,34 @@
-import './globals.css'
-import { Urbanist, Shrikhand } from 'next/font/google'
-import Nav from '@/components/navigation/Nav_1'
-import Footer from '@/components/footer/Footer_1'
-import Banner from '@/components/banner/Banner_1'
-import { siteConfig } from '@/config/siteConfig'
+import './globals.css';
+import { Urbanist, Shrikhand } from 'next/font/google';
+import Script from 'next/script';
+import Nav from '@/components/navigation/Nav_1';
+import Footer from '@/components/footer/Footer_1';
+import Banner from '@/components/banner/Banner_1';
+import { siteConfig } from '@/config/siteConfig';
 
 // Load fonts
 const urbanist = Urbanist({
   subsets: ['latin'],
   variable: '--font-urbanist',
-})
+});
 
 const shrikhand = Shrikhand({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-shrikhand',
-})
+});
 
 // Font map based on siteConfig.google.fonts keys
 const fontMap = {
   Urbanist: urbanist,
   Shrikhand: shrikhand,
-}
+};
 
-const baseFont = fontMap[siteConfig.fonts.google.base]
-const headingFont = fontMap[siteConfig.fonts.google.heading]
-const accentFont = fontMap[siteConfig.fonts.google.accent]
+const baseFont = fontMap[siteConfig.fonts.google.base];
+const headingFont = fontMap[siteConfig.fonts.google.heading];
+const accentFont = fontMap[siteConfig.fonts.google.accent];
 
-export const metadata = siteConfig.metadata.base
+export const metadata = siteConfig.metadata.base;
 
 export default function RootLayout({ children }) {
   return (
@@ -52,9 +53,16 @@ export default function RootLayout({ children }) {
           <Nav />
         </div>
 
+        {/* Instagram Embed Script */}
+        <Script
+          src="https://www.instagram.com/embed.js"
+          strategy="lazyOnload"
+          async
+        />
+
         <main>{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
