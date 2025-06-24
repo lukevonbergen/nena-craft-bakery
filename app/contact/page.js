@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import FindUs from '@/components/findus/FindUs_1';
 import { siteConfig } from '@/config/siteConfig';
