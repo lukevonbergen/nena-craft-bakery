@@ -1,5 +1,3 @@
-"use client";
-
 import Image from 'next/image';
 import FindUs from '@/components/findus/FindUs_1';
 import { siteConfig } from '@/config/siteConfig';
@@ -122,10 +120,8 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="text-white py-3 px-6 rounded-md transition duration-200 font-semibold"
+              className="text-white py-3 px-6 rounded-md transition duration-200 font-semibold hover:opacity-90"
               style={{ backgroundColor: layout.accent }}
-              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = layout.accentHover)}
-              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = layout.accent)}
             >
               {form.button}
             </button>
