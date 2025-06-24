@@ -1,6 +1,3 @@
-'use client';
-
-import { useEffect } from 'react';
 import { siteConfig } from '@/config/siteConfig';
 
 export default function AboutUs() {
@@ -37,26 +34,6 @@ export default function AboutUs() {
             </p>
           </div>
         ))}
-      </div>
-
-      {/* Instagram Feed Section */}
-      <div className="mt-24">
-        <h2 className="text-2xl font-bold text-center mb-8">See What We’re Up To</h2>
-        <div className="overflow-x-auto whitespace-nowrap flex gap-6 pb-4">
-          {instagramPosts.map((url, idx) => (
-            <div
-              key={idx}
-              className="min-w-[320px] max-w-[400px] flex-shrink-0 rounded overflow-hidden"
-            >
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink={url}
-                data-instgrm-version="14"
-                style={{ background: '#fff', border: 0, margin: 0, padding: 0 }}
-              ></blockquote>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
