@@ -87,6 +87,11 @@ export const siteConfig = {
     },
   },
 
+  hoursLocation: {
+    address: '3 Upper Borough Walls, Bath BA1 1RG',
+    email: 'hello@cascarabath.com',
+  },
+
   hero: {
     image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/bd/ea/alfred-street.jpg?w=1200&h=-1&s=1',
     imageAlt: 'Cascara interior, Bath',
