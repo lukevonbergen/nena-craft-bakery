@@ -1,31 +1,27 @@
 // config/siteConfig.js
-
 export const siteConfig = {
-  siteName: 'Nena Craft Bakery',
-
+  siteName: 'Cascara',
   metadata: {
     base: {
-      title: 'Nena Craft Bakery – Organic Sourdough & Pastries',
+      title: 'Cascara Bath – Plant-Based Café & Specialty Coffee',
       description:
-        'Nena Craft Bakery is an independent artisan bakery in Amersham and Berkhamsted, crafting fresh organic sourdough, pastries and cakes with care.',
-      icons: {
-        icon: '/favicon.ico',
-      },
+        'Cascara is a fully vegan café in the heart of Bath, serving specialty coffee, plant-based brunch, smoothies, juices and homemade baked goods.',
+      icons: { icon: '/favicon.ico' },
     },
     about: {
-      title: 'About | Nena Craft Bakery',
+      title: 'About | Cascara Bath',
       description:
-        'Learn about Nena Craft Bakery – a family-run business baking sourdough and pastries with organic ingredients and passion.',
+        'Discover Cascara – Bath’s fully vegan café offering ethically sourced coffees, smoothie bowls, juices, brunch and more.',
     },
     contact: {
-      title: 'Contact Us | Nena Craft Bakery',
+      title: 'Contact Us | Cascara Bath',
       description:
-        'Visit our bakery in Amersham or Berkhamsted. Get in touch to learn more about our menu, seasonal specials or opening hours.',
+        'Find us at 3 Upper Borough Walls, Bath. Pop by for coffee, brunch or a friendly chat—walk-ins welcome.',
     },
     gallery: {
-      title: 'Gallery | Nena Craft Bakery',
+      title: 'Gallery | Cascara Bath',
       description:
-        'Take a look inside Nena Craft Bakery – browse our sourdough, pastries, and hand-crafted baked goods.',
+        'Explore Cascara’s bright, cozy interiors, plant-based brunches, smoothies and café moments.',
     },
   },
 
@@ -34,40 +30,33 @@ export const siteConfig = {
     heading: `'Shrikhand', cursive`,
     baseClass: 'font-urbanist',
     headingClass: 'font-shrikhand',
-    google: {
-      base: 'Urbanist',
-      heading: 'Shrikhand',
-      accent: 'Urbanist',
-    },
+    google: { base: 'Urbanist', heading: 'Shrikhand', accent: 'Urbanist' },
   },
 
   brand: {
-    primary: '[#2D2A26]',
-    secondary: 'bg-[#5E7C60]',
-    accent: 'bg-[#C2BAAF]',
-    textDark: 'text-[#1F1D1B]',
-    textLight: 'text-[#FAF9F5]',
-    muted: 'text-gray-500',
+    primary: '[#2C2A29]',
+    secondary: 'bg-[#A0B46B]', // olive vibe
+    accent: 'bg-[#CFC799]',
+    textDark: 'text-[#2C2A29]',
+    textLight: 'text-[#FAFDF9]',
+    muted: 'text-gray-600',
   },
 
   styles: {
-    bgLight: 'bg-[#FAF9F5]',
-    bgPrimary: 'bg-[#5E7C60]',
-    highlightColour: 'text-[#5E7C60]',
-    textPrimary: 'text-[#2D2A26]',
+    bgLight: 'bg-[#FAFDF9]',
+    bgPrimary: 'bg-[#A0B46B]',
+    highlightColour: 'text-[#A0B46B]',
+    textPrimary: 'text-[#2C2A29]',
     textMuted: 'text-gray-600',
-    textSubtle: 'text-[#4D4A44]',
+    textSubtle: 'text-[#555444]',
     borderLight: 'border-gray-200',
     borderDark: 'border-gray-400',
   },
 
   banner: {
     show: true,
-    message: 'Fresh sourdough baked daily. No preservatives. No compromise.',
-    cta: {
-      label: 'See Our Bakes',
-      href: '/gallery',
-    },
+    message: 'Fully plant‑based and open daily — walk in anytime!',
+    cta: { label: 'See Menu', href: '/menu' },
   },
 
   nav: {
@@ -80,7 +69,7 @@ export const siteConfig = {
   },
 
   footer: {
-    copyright: 'Nena Craft Bakery',
+    copyright: 'Cascara Bath',
     nav: [
       { label: 'Menu', href: '/menu' },
       { label: 'About', href: '/about' },
@@ -88,163 +77,152 @@ export const siteConfig = {
       { label: 'Contact', href: '/contact' },
     ],
     social: {
-      instagram: 'https://www.instagram.com/nena_craftbakery/',
-      facebook: 'https://www.facebook.com/nenacraftbakery',
-      tripadvisor: 'https://www.tripadvisor.co.uk/Restaurant_Review-g499482-d24138268-Reviews-Nena_Craft_Bakery-Amersham_Buckinghamshire_England.html',
-      linkedin: '',
+      instagram: 'https://www.instagram.com/cascarabath/',
+      facebook: 'https://www.facebook.com/Cascarabath/',
+      linkedin: 'https://uk.linkedin.com/company/cascara-bath',
+      twitter: '',
       tiktok: '',
       youtube: '',
-      twitter: '',
+      tripadvisor: '',
     },
   },
 
   hero: {
-    image: '/images/hero-bread.jpg',
-    imageAlt: 'Fresh sourdough loaves at Nena Craft Bakery',
-    heading: 'HAND-CRAFTED DAILY,',
-    highlightWord: 'ORGANICALLY SOURCED',
-    blurb: 'Award-winning sourdough, seasonal bakes, and warm service in the heart of Amersham and Berkhamsted.',
+    image: '/images/cascara-hero.jpg',
+    imageAlt: 'Cascara storefront, Bath',
+    heading: 'PLANT‑BASED EVERYDAY',
+    highlightWord: 'COMMUNITY',
+    blurb:
+      'Serving fully vegan brunch, specialty coffee, smoothies, juices and homemade cakes—all in a cosy Bath setting.',
     hours: {
-      weekdays: {
-        label: 'MON – SAT',
-        time: '08.00–15.00',
-      },
-      weekends: {
-        label: 'SUNDAY',
-        time: '08.00–14.00',
-      },
+      weekdays: { label: 'MON–FRI', time: '08:00–16:00' },
+      weekends: { label: 'SAT–SUN', time: '08:00–16:30 / 10:00–16:00' },
     },
   },
 
   about: {
-    heading: 'Slow Fermentation. Honest Ingredients.',
-    subheading: `Everything we make is baked on-site using 100% organic flour and a slow 24-hour sourdough process. We believe great bread takes time.`,
+    heading: 'Dedicated to Delicious Plant‑Based Living',
+    subheading:
+      'Since 2018, Cascara has been a fully vegan hub in Bath—where recipe creativity meets community warmth, one bowl, toastie or smoothie at a time.',
     features: [
-      {
-        title: 'Award-Winning Sourdough',
-        text: 'Our 2-star Great Taste Award sourdough is made fresh every morning.',
-      },
-      {
-        title: 'From Our Family to Yours',
-        text: 'Nena is proudly independent and family-run – with quality at the heart of everything.',
-      },
+      { title: 'Specialty Coffee Roasters', text: 'Single‑origin espresso, filter & cold brew—plant‑milk friendly.' },
+      { title: 'All‑Day Brunch', text: 'From cashew “cream cheese” toast to tofu burritos—brunch done vegan.' },
+      { title: 'Home‑Baked Cakes', text: 'Gluten‑free and wheat, baked in‑house by caring hands.' },
     ],
   },
 
   location: {
-    heading: 'Visit Us',
-    text: 'Stop by one of our bakeries for bread, pastries, coffee or a chat. We bake everything ourselves – no corners cut.',
-    address: [
-      'Amersham Bakery',
-      '49 Sycamore Road, HP6 5EQ, Amersham',
-      '',
-      'Berkhamsted Bakery',
-      'Location details on Instagram',
-    ],
-    openingHours: [
-      'Mon–Sat: 8:00 AM – 3:00 PM',
-      'Sun: 8:00 AM – 2:00 PM',
-    ],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?...',
+    heading: 'Find Us in Bath',
+    text: 'Located in the heart of Bath’s Old City—perfect for coffee, brunch or a refresh during your walk.',
+    address: ['Cascara Bath', '3 Upper Borough Walls, Bath BA1 1RG, UK'],
+    openingHours: ['Mon–Fri: 08:00–16:00', 'Sat: 08:00–16:30', 'Sun: 10:00–16:00'],
+    mapEmbedUrl:
+      'https://www.google.com/maps/embed?...3+Upper+Borough+Walls+Bath',
   },
 
   gallery: {
+    hero: {
+      heading: 'Our Gallery',
+      blurb: 'Peek inside Cascara—cozy nooks, green vibes, vegan goodness & community moments.',
+    },
     images: [
-      { src: '/gallery/loaves.jpg', alt: 'Fresh sourdough loaves' },
-      { src: '/gallery/pastries.jpg', alt: 'Pastries on display' },
-      { src: '/gallery/interior.jpg', alt: 'Bakery interior' },
-      { src: '/gallery/coffee.jpg', alt: 'Barista pouring coffee' },
-      { src: '/gallery/counter.jpg', alt: 'Cakes on the counter' },
-      { src: '/gallery/team.jpg', alt: 'Bakery team working together' },
+      { src: '/gallery/cascara1.jpg', alt: 'Cascara interior with plants' },
+      { src: '/gallery/cascara2.jpg', alt: 'Vegan brunch plate' },
+      { src: '/gallery/cascara3.jpg', alt: 'Coffee and cakes' },
+      { src: '/gallery/cascara4.jpg', alt: 'Team behind the counter' },
     ],
   },
 
   testimonials: {
-    heading: 'What Our Customers Say',
-    subheading: 'Reviews from happy customers in Amersham & Berkhamsted.',
+    heading: 'Loved by Our Community',
+    subheading: 'Reviews from happy visitors and locals.',
     entries: [
       {
-        quote: 'Hands down the best sourdough I’ve ever had. Worth the detour!',
-        name: 'Laura H.',
-        title: 'Google Review',
+        quote:
+          'Lovely food, friendly service … cashew cream cheese & “salmon” on sourdough went down a treat.',
+        name: 'Sofinka',
+        title: 'HappyCow Review',
       },
       {
-        quote: 'A gem of a bakery. Staff are lovely and the coconut cookies are elite.',
-        name: 'Tom S.',
-        title: 'TripAdvisor',
+        quote:
+          'Faultless vegan food… brunch burrito is out of this world… will return.',
+        name: 'barrlynnev',
+        title: 'HappyCow',
       },
       {
-        quote: 'Their croissants are next level. Can’t start the weekend without one.',
-        name: 'Jasmine R.',
-        title: 'Instagram',
+        quote:
+          'All towns should have a “Cascara”! Lovely staff, delicious mains and devilishly naughty cakes!',
+        name: 'Hellibori',
+        title: 'HappyCow',
       },
-    ]
-  },
-
-  hoursLocation: {
-    hours: 'Mon–Sat: 08.00–15.00, Sun: 08.00–14.00',
-    address: '49 Sycamore Road, Amersham HP6 5EQ',
-    email: 'hello@nenacraftbakery.com',
+    ],
   },
 
   intro: {
-    title: 'Baking with Purpose',
-    description: 'Our breads are fermented slowly, made with organic flour, and crafted with care – every day, from scratch.',
+    title: 'A Vegan Hub in Bath’s Heart',
+    description:
+      'From ethically sourced beans to house‑baked cakes and wholesome brunches, Cascara is where plant flavour and community meet.',
     features: [
-      { title: '100% Organic', text: 'We use only certified organic ingredients – no additives.' },
-      { title: 'Sourdough, Daily', text: 'Each loaf is hand-shaped, slow-risen and baked with precision.' },
-      { title: 'Small-Batch', text: 'Our team bakes in small quantities for maximum freshness.' },
+      { title: '100% Vegan', text: 'Every menu item is plant‑based and crafted with purpose.' },
+      { title: 'Inclusive Vibe', text: 'Kid‑ & dog‑friendly, laptop‑friendly, card payments accepted.' },
+      { title: 'Creative & Fresh', text: 'Menu rotates often—expect surprises like kimchi toastie or beetroot pancakes!' },
     ],
   },
 
   menuHighlights: {
-    title: 'What We Bake',
+    title: 'What We’re Known For',
     items: [
-      { label: 'Signature Sourdough', image: '/gallery/loaves.jpg' },
-      { label: 'Cinnamon Buns', image: '/gallery/pastries.jpg' },
-      { label: 'Coconut Cookies', image: '/gallery/cookies.jpg' },
-      { label: 'Organic Croissants', image: '/gallery/croissant.jpg' },
+      { label: 'All‑Day Breakfast', image: '/gallery/cascara1.jpg' },
+      { label: 'Cold-Pressed Juices & Smoothies', image: '/gallery/cascara2.jpg' },
+      { label: 'Specialty Coffee', image: '/gallery/cascara3.jpg' },
+      { label: 'Home‑Baked Cakes', image: '/gallery/cascara4.jpg' },
     ],
-    cta: {
-      label: 'See Full Selection',
-      href: '/gallery',
-    },
+    cta: { label: 'Browse Menu', href: '/menu' },
   },
 
   contact: {
     intro: {
-      heading: 'We’d Love to Hear from You',
-      blurb: 'Whether you’ve got a question, want to order for a special event, or just want to say hi – we’re always happy to help.',
-    },
-    details: {
-      description: 'Pop in or drop us a message using the form below. We try to respond within 24 hours.',
-      address: '49 Sycamore Road, Amersham HP6 5EQ',
-      phone: '+441494433101',
-      phoneDisplay: '01494 433101',
-      email: 'hello@nenacraftbakery.com',
-      image: {
-        src: '/gallery/interior.jpg',
-        alt: 'Inside Nena Craft Bakery',
+      heading: 'Come Say Hello',
+      blurb:
+        "Whether you'd like coffee, brunch, or a chat, we’re here—walk-ins always welcome.",
+      backgroundImage: {
+        src: '/images/cascara-hero-2.jpg',
+        alt: 'Inside Cascara cafe corner',
       },
     },
-    formspreeId: 'mjkrendn',
+    details: {
+      description:
+        'Free Wi‑Fi, kid & dog friendly, card payments accepted.',
+      address: '3 Upper Borough Walls, Bath BA1 1RG',
+      phone: '+441225542636',
+      phoneDisplay: '01225 542636',
+      email: 'info@cascarabath.co.uk',
+      image: {
+        src: '/gallery/cascara-interior.jpg',
+        alt: 'Cascara interior view',
+      },
+      hours: {
+        monFri: '08:00–16:00',
+        sat: '08:00–16:30',
+        sun: '10:00–16:00',
+      },
+    },
+    formspreeId: 'YOUR_FORMSPREE_ID',
     form: {
       heading: 'Send Us a Message',
       fields: {
-        name: {
-          label: 'Name',
-          placeholder: 'Your full name',
-        },
-        email: {
-          label: 'Email',
-          placeholder: 'you@example.com',
-        },
-        message: {
-          label: 'Message',
-          placeholder: 'How can we help?',
-        },
+        name: { label: 'Name', placeholder: 'Your name' },
+        email: { label: 'Email', placeholder: 'you@example.com' },
+        message: { label: 'Message', placeholder: 'Your message here' },
       },
       button: 'Send Message',
+    },
+    layout: {
+      backgroundColor: '#FAFDF9',
+      cardBackground: '#FFFFFF',
+      border: 'border-gray-200',
+      accent: '#A0B46B',
+      accentHover: '#809443',
     },
   },
 };

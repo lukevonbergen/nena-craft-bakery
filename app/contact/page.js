@@ -6,13 +6,21 @@ export const metadata = siteConfig.metadata.contact;
 
 export default function ContactPage() {
   const { contact } = siteConfig;
-  const { intro, details, form, formspreeId } = contact;
+  const { intro, details, form, formspreeId, layout } = contact;
 
   return (
     <main>
-      {/* Intro Section */}
-      <section className="bg-[#f3e9dc] py-24 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto text-center">
+      {/* Hero Section with Background */}
+      <section
+        className="relative py-24 px-6 md:px-12"
+        style={{
+          backgroundImage: `url(${intro.backgroundImage?.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0" style={{ backgroundColor: `${layout.backgroundColor}CC` }}></div>
+        <div className="relative max-w-7xl mx-auto text-center z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-[#5E3023] mb-6">
             {intro.heading}
           </h1>
@@ -23,7 +31,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info + Image */}
-      <section className="py-16 px-6 md:px-12 bg-white border-y border-gray-100">
+      <section className={`py-16 px-6 md:px-12 bg-white border-y ${layout.border}`}>
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           {/* Contact Details */}
           <div>
@@ -47,7 +55,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Café Image */}
+          {/* Image */}
           <div>
             <Image
               src={details.image.src}
@@ -61,7 +69,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 px-6 md:px-12 bg-[#f3e9dc]">
+      <section className="py-20 px-6 md:px-12" style={{ backgroundColor: layout.backgroundColor }}>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-semibold text-center text-[#5E3023] mb-8">
             {form.heading}
@@ -80,7 +88,7 @@ export default function ContactPage() {
                 name="name"
                 required
                 placeholder={form.fields.name.placeholder}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#78ADA5]"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2"
               />
             </div>
 
@@ -93,7 +101,7 @@ export default function ContactPage() {
                 name="email"
                 required
                 placeholder={form.fields.email.placeholder}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#78ADA5]"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2"
               />
             </div>
 
@@ -106,19 +114,23 @@ export default function ContactPage() {
                 rows="6"
                 required
                 placeholder={form.fields.message.placeholder}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#78ADA5]"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2"
               />
             </div>
 
             <button
               type="submit"
-              className="bg-[#78ADA5] text-white py-3 px-6 rounded-md hover:bg-[#5e9d93] transition duration-200 font-semibold"
+              className="text-white py-3 px-6 rounded-md transition duration-200 font-semibold"
+              style={{ backgroundColor: layout.accent }}
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = layout.accentHover)}
+              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = layout.accent)}
             >
               {form.button}
             </button>
           </form>
         </div>
       </section>
+
       <FindUs />
     </main>
   );
