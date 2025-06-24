@@ -96,7 +96,8 @@ export const siteConfig = {
       'Serving fully vegan brunch, specialty coffee, smoothies, juices and homemade cakes—all in a cosy Bath setting.',
     hours: {
       weekdays: { label: 'MON–FRI', time: '08:00–16:00' },
-      weekends: { label: 'SAT–SUN', time: '08:00–16:30 / 10:00–16:00' },
+      saturday: { label: 'SATURDAY', time: '08:00–16:30' },
+      sunday: { label: 'SUNDAY', time: '10:00–16:00' },
     },
   },
 
