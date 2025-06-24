@@ -13,7 +13,6 @@ export default function HoursLocationBar() {
   );
   const day = now.getDay(); // 0 = Sunday, 6 = Saturday
 
-  // Select today’s hours
   const today =
     day === 0
       ? hours.sunday
@@ -21,7 +20,6 @@ export default function HoursLocationBar() {
       ? hours.saturday
       : hours.weekdays;
 
-  // Parse opening and closing time (format must be HH:MM–HH:MM)
   const [openTimeStr, closeTimeStr] = today.time.split('–');
   const [openHour, openMinute] = openTimeStr.split(':').map(Number);
   const [closeHour, closeMinute] = closeTimeStr.split(':').map(Number);
@@ -35,12 +33,12 @@ export default function HoursLocationBar() {
   const isOpen = now >= openTime && now < closeTime;
 
   const statusMessage = isOpen
-    ? `✅ Open now until ${closeTimeStr}`
-    : `❌ Closed – opens at ${openTimeStr}`;
+    ? `Open now until ${closeTimeStr}`
+    : `Closed – opens tomorrow at ${openTimeStr}`;
 
   return (
     <section className={`${siteConfig.styles.bgPrimary} text-white py-4 px-6`}>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm gap-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-4 text-sm">
         <div className="flex items-center gap-2">
           <Clock className="w-4 h-4" />
           <span>{statusMessage}</span>
