@@ -186,7 +186,7 @@ export const siteConfig = {
       { label: 'Stunning Wraps', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/f7/2c/b5/all-day-brunch-burrito.jpg?w=1100&h=-1&s=1' },
       { label: 'Coffee & Cake', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e9/55/a6/img-20190322-173157-026.jpg?w=1000&h=-1&s=1' },
       { label: 'Cosy Inside', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/bd/ea/alfred-street.jpg?w=1200&h=-1&s=1' },
-      { label: 'Breakfast', image: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npxwZ_ci2ikQfjizNFFpk3cBMt9L3naBNoleQK20GvaMYAL4uj5ZAfJS6kTaSAo_nHlkuuAnfemaSGaw592xB-cl9Z8ZXxQ9WhEbozfZ_a9aKoyVg1paWAWffsmap7VCwjcnnXf=s1360-w1360-h1020-rw' },
+      { label: 'Breakfast', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f9/63/f3/photo0jpg.jpg?w=1400&h=-1&s=1' },
     ],
     cta: { label: 'Browse Menu', href: '/menu' },
   },
