@@ -1,6 +1,11 @@
 // config/siteConfig.js
 export const siteConfig = {
   siteName: 'Cascara',
+  logo: {
+    src: '/logo/cascara_logo.png',
+    alt: 'Cascara Logo',
+    height: 40,
+  },
   metadata: {
     base: {
       title: 'Cascara Bath – Plant-Based Café & Specialty Coffee',
