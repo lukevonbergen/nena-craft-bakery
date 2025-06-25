@@ -10,7 +10,7 @@ export default function Navbar() {
   const nav = siteConfig.nav;
 
   return (
-    <header className="w-full sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-sm">
+    <header className="w-full sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <a href="/" className="flex items-center">
@@ -49,7 +49,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-sm border-t border-gray-200 px-6 py-4 text-sm font-semibold text-gray-700 transition-all">
+        <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 text-sm font-semibold text-gray-700 transition-all">
           <ul className="space-y-0 divide-y divide-gray-200">
             {nav.links.map(link => (
               <li key={link.href}>
