@@ -61,7 +61,7 @@ export const siteConfig = {
   banner: {
     show: true,
     message: 'Fully plant‑based and open daily — walk in anytime!',
-    cta: { label: 'See Menu', href: '/menu' },
+    cta: { label: 'Find us', href: '/contact' },
   },
 
   nav: {
@@ -76,7 +76,6 @@ export const siteConfig = {
   footer: {
     copyright: 'Cascara Bath',
     nav: [
-      { label: 'Menu', href: '/menu' },
       { label: 'About', href: '/about' },
       { label: 'Gallery', href: '/gallery' },
       { label: 'Contact', href: '/contact' },
@@ -188,7 +187,7 @@ export const siteConfig = {
       { label: 'Cosy Inside', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/bd/ea/alfred-street.jpg?w=1200&h=-1&s=1' },
       { label: 'Breakfast', image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f9/63/f3/photo0jpg.jpg?w=1400&h=-1&s=1' },
     ],
-    cta: { label: 'Browse Menu', href: '/menu' },
+    cta: { label: 'More about us', href: '/about' },
   },
 
   contact: {
