@@ -2,7 +2,7 @@
 export const siteConfig = {
   siteName: 'Cascara',
   logo: {
-    src: '/logo/cascara_logo.png',
+    src: '/logo/cascara_logo.jpg',
     alt: 'Cascara Logo',
     height: 40,
   },
